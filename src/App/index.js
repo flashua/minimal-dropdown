@@ -3,14 +3,8 @@ import MiniDropdown from './MiniDropdown'
 
 class App extends Component {
   render() {
-    return (
-      <div className="App">
-          <MiniDropdown trigger={<button>Open</button>}>
-              test
-          </MiniDropdown>
-      </div>
-    );
+    return <MiniDropdown trigger={<button>Open</button>}>test</MiniDropdown>
   }
 }
 
-export default App;
+export default App
