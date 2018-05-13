@@ -12,12 +12,14 @@
   "dependencies": {
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
-    "react-overlays": "^0.8.1",    
+    "react-overlays": "^0.8.1",
+    "recompose": "^0.27.0"
   },
   "devDependencies": {
-    "react-scripts": "1.0.14"
+    "react-scripts": "1.1.4"
   },
   "scripts": {
-    "start": "react-scripts start"
+    "start": "react-scripts start",
+    "prettier": "prettier --print-width=100 --single-quote --trailing-comma all --tab-width=2 --no-semi --write \"./**/*.js\""
   }
 }

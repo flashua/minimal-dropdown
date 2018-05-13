@@ -1,7 +1,10 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
-import App from './App'
-import registerServiceWorker from './registerServiceWorker'
+import { render } from 'react-dom'
+import MiniDropdown from './MiniDropdown'
 
-ReactDOM.render(<App />, document.getElementById("root"));
-registerServiceWorker();
+const root = document.getElementById('root')
+const button = <button>Open</button>
+const content = 'test'
+const dropdown = <MiniDropdown component={button}>{content}</MiniDropdown>
+
+render(dropdown, root)
