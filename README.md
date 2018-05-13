@@ -1,6 +1,6 @@
-##A minimal Dropdown with zero config
+# A minimal Dropdown with zero config
 
-# Example to use
+## Example to use
 
 ```
 import MiniDropdown from './MiniDropdown'
