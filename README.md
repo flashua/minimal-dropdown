@@ -3,9 +3,9 @@
 How to use:
 
 ```
-import MiniDropdown from './MiniDropdown'
+import ZeroConfigDropdown from './ZeroConfigDropdown'
 
 const button = <button>Open</button>
 const content = <div>test</div>
-const dropdown = <MiniDropdown component={button}>{content}</MiniDropdown>
+const dropdown = <ZeroConfigDropdown component={button}>{content}</ZeroConfigDropdown>
 ```

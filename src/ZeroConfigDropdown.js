@@ -5,7 +5,7 @@ import { compose, withState, withHandlers, defaultProps, setPropTypes } from 're
 
 const Content = ({ children }) => <div style={{ position: 'absolute' }} children={children} />
 
-const MiniDropdown = ({ component, disabled, onClick, ref, target, show, onHide, children }) => (
+const ZeroConfigDropdown = ({ component, disabled, onClick, ref, target, show, onHide, children }) => (
   <div>
     {cloneElement(component, { disabled, onClick, ref })}
     <Overlay rootClose placement="bottom" {...{ target, show, onHide }}>
@@ -28,8 +28,8 @@ const enhanceDropdown = compose(
   withState('target', 'ref', null),
   withHandlers({
     onClick: ({ disabled, setShow, show }) => () => !disabled && setShow(!show),
-    onHide: ({ show, setShow }) => () => setShow(!show)
-  })
+    onHide: ({ show, setShow }) => () => setShow(!show),
+  }),
 )
 
-export default enhanceDropdown(MiniDropdown)
+export default enhanceDropdown(ZeroConfigDropdown)

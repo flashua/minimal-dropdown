@@ -1,6 +1,6 @@
 import React from 'react'
 import { render } from 'react-dom'
-import MiniDropdown from './MiniDropdown'
+import MiniDropdown from './ZeroConfigDropdown'
 
 const root = document.getElementById('root')
 const button = <button>Open</button>

@@ -1,9 +1,10 @@
 {
-  "name": "minimal-dropdown",
-  "version": "0.1.0",
+  "name": "zero-config-dropdown",
+  "version": "1.0.0",
   "description": "Zero config simple dropdown",
-  "main": "src/app/MiniDropdown.js",
+  "main": "src/ZeroConfigDropdown.js",
   "author": "Oleksandr Pastukhov",
+
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/flashua/minimal-dropdown/issues"
@@ -17,10 +18,27 @@
     "prop-types": "^15.6.1"
   },
   "devDependencies": {
-    "react-scripts": "1.1.4"
+    "react-scripts": "1.1.4",
+    "prettier": "^1.12.1"
   },
   "scripts": {
     "start": "react-scripts start",
-    "prettier": "prettier --print-width=100 --single-quote --trailing-comma all --tab-width=2 --no-semi --write \"./**/*.js\""
+    "prettier": "prettier --write \"./**/*.js\""
+  },
+  "prettier": {
+    "trailingComma": "all",
+    "singleQuote": true,
+    "printWidth": 100,
+    "tabWidth": 2,
+    "semi": false
+  },
+  "eslintConfig": {
+    "extends": "react-app",
+    "rules": {
+      "indent": [1, 2],
+      "quotes": [2, "single"],
+      "strict": [2, "never"],
+      "semi": [2, "never"]
+    }
   }
 }
